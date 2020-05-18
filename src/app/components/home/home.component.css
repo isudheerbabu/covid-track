@@ -1,0 +1,9 @@
+@media (max-width: 767.98px) { 
+    .myrow {
+        display: flex;
+        flex-direction: column;
+    }
+    googlechart {
+        width: 400px;
+    }
+}

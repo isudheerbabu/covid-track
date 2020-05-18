@@ -1,0 +1,53 @@
+<div class="ui active inverted dimmer" [class.active]="loading">
+    <div class="ui text loader">Loading</div>
+</div>
+<div class="jumbotron bg-white text-center">
+    <h2 class="display-4">World Wide Covid-19 Info data</h2>
+    <hr>
+    
+    <app-dashboard-card [totalConfirmed]="totalConfirmed"
+    [totalRecovered]="totalRecovered"
+    [totalDeaths]="totalDeaths"
+    [totalActive]="totalActive"></app-dashboard-card>
+    
+</div>
+<div class="ui form m-2 p-2">
+    <div class="inline fields">
+      <label>Case Type:</label>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="confirm" id="confirm" #confirm (click)="updateChart(confirm)" name="casetype" checked="" tabindex="0" class="hidden">
+          <label for="confirm">Confirmed</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="death" id="death" #death (click)="updateChart(death)" name="casetype" tabindex="0" class="hidden">
+          <label for="death">Deaths</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="recover" id="recovered" #recovered (click)="updateChart(recovered)" name="casetype" tabindex="0" class="hidden">
+          <label for="recovered">Recovered</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="active" id="active" #active (click)="updateChart(active)" name="casetype" tabindex="0" class="hidden">
+          <label for="active">Active</label>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="myrow row m-2 p-2">
+    <div class=" col col-md-6">
+        <google-chart [data]="datatable" [type]='chart.PieChart' [options]="chart.options" style="width:100%" [height]='chart.height'></google-chart>
+    </div>
+    <div class="col col-md-6">
+        <google-chart [data]="datatable" [type]='chart.ColumnChart' [options]="chart.options" style="width:100%" [height]='chart.height'></google-chart>
+    </div>
+</div>
+

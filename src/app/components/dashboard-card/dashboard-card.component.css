@@ -1,0 +1,9 @@
+.ui.statistic>.value {
+    font-size: 2em !important;
+}
+@media (max-width: 767.98px) { 
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+ }
