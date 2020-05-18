@@ -23,7 +23,7 @@ import { DataService } from './services/data.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    GoogleChartsModule
+    GoogleChartsModule.forRoot({ version: 'chart-version' })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
