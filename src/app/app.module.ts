@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CountriesComponent } from './components/countries/countries.component';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
     HttpClientModule,
     GoogleChartsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
