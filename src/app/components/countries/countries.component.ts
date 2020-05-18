@@ -8,7 +8,8 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-countries',
   templateUrl: './countries.component.html',
-  styleUrls: ['./countries.component.css']
+  styleUrls: ['./countries.component.css'],
+  providers: [DataService]
 })
 export class CountriesComponent implements OnInit {
 
