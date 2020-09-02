@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'covid19-feed'`, () => {
+  it(`should have as title 'covid-track'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('covid19-feed');
+    expect(app.title).toEqual('covid-track');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('covid19-feed app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('covid-track app is running!');
   });
 });
