@@ -58,7 +58,6 @@ export class HomeComponent implements OnInit {
   }
 
   updateChart(input: HTMLInputElement) {
-    console.log(input.value);
     this.initChart(input.value);
   }
 
