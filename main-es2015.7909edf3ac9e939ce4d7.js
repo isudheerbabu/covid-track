@@ -75646,7 +75646,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 class AppComponent {
     constructor() {
-        this.title = 'covid19-feed';
+        this.title = 'covid-track';
     }
 }
 

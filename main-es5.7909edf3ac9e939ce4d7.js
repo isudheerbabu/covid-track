@@ -111868,7 +111868,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
 
-      this.title = 'covid19-feed';
+      this.title = 'covid-track';
     };
     /***/
 
